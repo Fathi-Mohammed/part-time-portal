@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "din-next";
+    src: url(../fonts/din-next-lt-w23-regular.ttf);
+}
+
+:root {
+    --main-color: #3792FC;
+    ---main-color-alt: #1B74DD;
+}
+
+/* Start title */
+.title {
+    background-color: white;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title .container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+/* End title */
+/* Start protfile */
+.protfile {
+    margin-top: 20px;
+}
+
+.protfile .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.protfile .container .box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 70%;
+}
+
+.protfile .container .box .head {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.protfile .container .box .head i {
+    font-size: 25px;
+    color: #BBBBBB;
+}
+
+.protfile .container .box .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.protfile .container .box .content .info i {
+    color: var(--main-color);
+    margin: 10px 0 0 10px;
+    font-size: 14px;
+}
+.protfile .container .box .btn a {
+    display: block;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+    background: var(--main-color);
+    text-align: center;
+    color: white;
+}
+/* End protfile */

@@ -1,0 +1,133 @@
+/* Start title */
+.title {
+    background-color: white;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title .container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+/* End title */
+/* Start Request */
+.request {
+    margin-top: 20px;
+}
+
+.request .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.request .container .box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 490px;
+}
+
+.request .container .box .text h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.request .container .content p {
+    font-size: 14px;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.request .container .content form input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #E8E8E8;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.request .container .content form input::placeholder {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.request .container .content form input:focus::placeholder {
+    opacity: 0;
+}
+
+.request .container .content form textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #E8E8E8;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    resize: none;
+}
+
+.request .container .content form textarea::placeholder {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.request .container .content form textarea:focus::placeholder {
+    opacity: 0;
+}
+
+.request .container .content select {
+    width: 100%;
+    outline: none;
+    border: 1px solid #E8E8E8;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.request .container .content form:last-of-type {
+    width: 100%;
+    border: 1px solid #E8E8E8;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.request .container .content form .checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.request .container .content form .checkbox p {
+    width: 100%;
+    margin: 0;
+}
+
+.request .container .content form .checkbox input {
+    width: 20px;
+    margin: 0;
+}
+.request .container .box a {
+    display: block;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    margin-top: 20px;
+    background: var(--main-color);
+    color: white;
+}
+
+/* End Request */

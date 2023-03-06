@@ -1,0 +1,126 @@
+/* Start title */
+.title {
+    background-color: white;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title .container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+/* End title */
+/* Start Job Offers */
+.jobRequest {
+    margin-top: 20px;
+}
+
+.jobRequest > .container {
+    width: 55%;
+}
+
+.jobRequest > .container .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.jobRequest > .container .box .card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.jobRequest .container .box .card .text {
+    text-align: right;
+}
+
+.jobRequest > .container .box .card  p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #ADADAD;
+    text-align: right;
+    line-height: 1.8;
+}
+
+.jobRequest .container .box .card .text h2 {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.jobRequest .container .box .card:first-of-type .text p:last-of-type {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.jobRequest .container .box .card .info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #CBCBCB;
+    padding-bottom: 20px;
+}
+
+.jobRequest .container .box .card .info .title {
+    font-size: 14px;
+}
+
+.jobRequest .container .box .card .info .title i {
+    color: var(--main-color);
+    margin-left: 5px;
+}
+
+.jobRequest .container .box .card .info .title span {
+    margin-left: 100px;
+}
+
+.jobRequest .container .box .card .moreInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+    border-bottom: 1px solid #CBCBCB;
+    padding: 20px 0;
+    margin-bottom: 20px;
+
+}
+
+.jobRequest .container .box .card .moreInfo span {
+    font-size: 14px;
+    color: #ADADAD;
+}
+
+.jobRequest .container .box .card .moreInfo span p {
+    font-size: 14px;
+    color: black;
+    margin-top: 5px;
+}
+
+.jobRequest > .container .box .btn a {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-left: 10px;
+
+}
+
+.jobRequest .container .box .btn a:last-of-type {
+    border: 1px solid red;
+    color: red;
+    background-color: white;
+}
+
+
+/* End Job Offers */

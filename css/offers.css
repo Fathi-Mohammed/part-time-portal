@@ -1,0 +1,209 @@
+/* Start title */
+.title {
+    background-color: white;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title .container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+/* End title */
+/* Start offers */
+.offers {
+    margin-top: 20px;
+}
+
+.offers>.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offers .container .box {
+    background-color: white;
+    padding: 30px 70px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width:430px) {
+    .offers>.container .box {
+        padding: 30px 20px;
+    }
+}
+
+.offers .container .box .text p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+.offers .container .box .text h2 {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+.offers .container .box .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+/* @media (max-width:992px) {
+    .offers .container .box .cards {
+        flex-direction: column;
+    }
+
+} */
+
+.offers .container .cards .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.offers .container .cards .card a {
+    padding: 10px 0;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+    color: white;
+    }
+
+.offers .container .cards .card .head,
+.offers .container .cards .card .head .headtext {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+}
+
+@media (max-width:430px) {
+    .offers .container .cards .card .head {
+        flex-direction: column;
+    }
+
+    .offers .container .cards .card .head .price {
+        margin-top: -20px;
+        margin-bottom: 10px;
+    }
+}
+
+.offers .container .cards .card .head {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.offers .container .cards .card .head .headtext h1 {
+    font-size: 18px;
+}
+
+.offers .container .cards .card .head .price h1,
+.offers .container .cards .card .head .price p {
+    font-size: 18px;
+}
+
+.offers .container .cards .card .content .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.offers .container .cards .card .content .row p {
+    font-size: 14px;
+    text-align: right;
+}
+
+.offers .container .cards .card .content .row .value {
+    width: 50px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.offers .container .cards .main {
+    background: rgba(108, 177, 238, 0.15);
+}
+
+.offers .container .cards .main .head .headtext {
+    color: var(--main-color);
+    padding: 20px;
+}
+
+.offers .container .cards .main .head .headtext .icon {
+    background: rgba(55, 146, 252, 0.2);
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.offers .container .cards .main .content .row .value {
+    color: var(--main-color);
+}
+
+.offers .container .cards .main a {
+    background-color: var(--main-color);
+    }
+
+.offers .container .cards .silver {
+    background: rgba(166, 178, 221, 0.15);
+}
+
+.offers .container .cards .silver .head .headtext {
+    color: #A6B2DD;
+    padding: 20px;
+}
+
+.offers .container .cards .silver .head .headtext .icon {
+    background: rgba(166, 178, 221, 0.2);
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.offers .container .cards .silver .content .row .value {
+    color: #A6B2DD;
+}
+
+.offers .container .cards .silver a {
+    background-color: #A6B2DD;
+}
+
+.offers .container .cards .gold {
+    background: rgba(254, 192, 45, 0.15);
+}
+
+.offers .container .cards .gold .head .headtext {
+    color: #FEC02D;
+    padding: 20px;
+}
+
+.offers .container .cards .gold .head .headtext .icon {
+    background: rgba(254, 192, 45, 0.2);
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.offers .container .cards .gold .content .row .value {
+    color: #FEC02D;
+}
+
+.offers .container .cards .gold a {
+    background-color: #FEC02D;
+}
+
+
+/* End offers */

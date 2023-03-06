@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "din-next";
+    src: url(../fonts/din-next-lt-w23-regular.ttf);
+}
+
+:root {
+    --main-color: #3792FC;
+    ---main-color-alt: #1B74DD;
+}
+
+/* Start title */
+.title {
+    background-color: white;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title .container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+/* End title */
+/* Start paynow */
+.paynow {
+    margin-top: 20px;
+}
+
+.paynow .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paynow .container .box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.paynow .container .box .text p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+.paynow .container .box .text h2 {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+.paynow .container .select {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.paynow .container .select select {
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 2px solid #C99B45;
+    width: 100%;
+    margin-top: 10px;
+    background: white;
+    font-size: 16px;
+    appearance: none;
+}
+
+.paynow .container  .select .icons {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .paynow .container .select select {
+        font-size: 14px;
+    }
+    .paynow .container  .select .icons img {
+        width: 40%;
+    }
+
+}
+.paynow .container .content {
+    display: flex;
+    flex-direction: column;    
+}
+.cardinfo {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.paynow .container .content .cardinfo:first-of-type {
+    width: 100%;
+}
+
+.cardinfo .input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #E2E5F1;
+    width: 100%;
+    margin-top: 5px;
+    gap: 5px;
+}
+
+.paynow .container .content .cardinfo .input img {
+    height: 10px;
+}
+.paynow .container .content .cardinfo .input form input  {
+    padding: 5px;
+    border: none;
+}
+.paynow .container .content .cardinfo .input form input:focus  {
+    outline: none;
+    border: none;
+}
+.paynow .container .content .more {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.paynow .container  a {
+    display: block;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+    background: var(--main-color);
+    color: white;
+    margin-top: 20px;
+}
+.paynow .container .content .cardinfo .input form input::placeholder {
+    opacity: 1;
+    transition: 0.3s;
+}
+.paynow .container .content .cardinfo .input form input:focus::placeholder {
+    opacity: 0;
+}
+
+/* End paynow */

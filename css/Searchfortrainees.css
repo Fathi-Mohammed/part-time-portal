@@ -1,0 +1,154 @@
+/* Start title */
+.title {
+    background-color: white;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title .container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+/* End title */
+/* Start Search For Trainees */
+.searchfortrainees {
+    margin-top: 20px;
+}
+
+.searchfortrainees .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchfortrainees .container .box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.searchfortrainees .container .box .text h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.searchfortrainees .container .box .cards  {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.searchfortrainees .container .box .cards .card p {
+    text-align: right;
+}
+.searchfortrainees .container .box .cards .card select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #E8E8E8;
+    width: 100%;
+    margin-top: 10px;
+    background: white;
+    font-size: 16px;
+}
+/* End Search For Trainees */
+
+/* Start Search Results */
+.searchResults {
+    margin-top: 20px;
+}
+
+.searchResults .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.searchResults .container .box {
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.searchResults .container .box .text h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.searchResults .container .box .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.searchResults .container .box .cards .card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.searchResults .container .box .cards .card .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 50px;
+}
+.searchResults .container .box .cards .card .head .user i {
+    color: #BBB;
+}
+.searchResults .container .box .cards .card .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    gap: 5px;
+}
+.searchResults .container .box .cards .card .head p {
+    font-size: 14px;
+}
+.searchResults .container .box .cards .card .head span {
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid var(--main-color);
+    padding: 5px 20px;
+    color: var(--main-color);
+}
+
+.searchResults .container .box .cards .card .content {
+    font-size: 14px;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.searchResults .container .box .cards .card .content span {
+    font-size: 12px;
+}
+.searchResults .container .box .cards .card .content a {
+    color: var(--main-color);
+}
+.searchResults .container .box .cards .card .content a i {
+    margin-left: 10px;
+}
+
+.searchResults .container .box .cards .card > a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    width: fit-content;
+    background: var(--main-color);
+    color: white;
+    align-items: center;
+}
+
+/* End Search Results */

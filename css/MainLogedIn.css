@@ -1,0 +1,53 @@
+/* Start Nav */
+
+.navLoggedIn .container .userInfo {
+    color: #333;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.navLoggedIn .container .userInfo i:first-of-type {
+    font-size: 25px;
+}
+
+.megaMenu {
+    position: absolute;
+    z-index: 100;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    left: 0;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+
+}
+
+.megaMenu a {   
+    padding: 15px 15px 15px 90px;
+    color: black    ;
+    
+}
+.megaMenu a:first-of-type {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.megaMenu a:last-of-type {
+color: red;
+}
+
+
+.navLoggedIn .container .userInfo:hover .megaMenu {
+    top: 70%;
+    visibility: visible;
+    opacity: 1;
+}
+/* End Nav */
