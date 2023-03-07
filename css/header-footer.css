@@ -358,11 +358,15 @@ ul {
 
 .footer .box .links li {
     padding: 10px 0;
-    transition: 0.3s;
 }
 
-.footer .box .links li:hover a {
+.footer .box .links li a:hover {
+    transition: 0.3s ease;
+
+}
+.footer .box .links li a:hover {
     color: white;
+    margin-right: 10px;
 }
 
 .footer .box .links li a {
@@ -381,7 +385,9 @@ ul {
 .footer .box .mail-input {
     position: relative;
     margin-top: 40px;
+    margin-right: -25px;
 }
+
 
 .footer .box .mail-input input {
     border: none;
