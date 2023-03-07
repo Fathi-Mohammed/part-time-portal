@@ -43,6 +43,13 @@
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    .paynow .container .box {
+        width: 300px;
+    }
+
+}
+
 .paynow .container .box .text p {
     font-size: 14px;
     font-weight: lighter;

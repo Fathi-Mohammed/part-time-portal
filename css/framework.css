@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "din-next";
+    src: url(../fonts/din-next-lt-w23-regular.ttf);
+}
+
+
+:root {
+    --main-color: #3792FC;
+    ---main-color-alt: #1B74DD;
+}
 
 /* Start Box */
 .d-flex {
@@ -50,6 +60,14 @@
 
 .p-20 {
     padding: 20px;
+}
+
+.p-50 {
+    padding: 50px;
+}
+
+.p-100 {
+    padding: 100px;
 }
 
 .pt-10 {
@@ -116,6 +134,10 @@
     margin-top: 25px;
 }
 
+.mt-50 {
+    margin-top: 50px;
+}
+
 .mr-10 {
     margin-right: 10px;
 }
@@ -144,8 +166,15 @@
     margin-bottom: 25px;
 }
 
+.mb-50 {
+    margin-bottom: 50px;
+}
+
 /* End Padding + Margin */
 /* Start Color */
+.c-main {
+    color: var(--main-color);
+}
 .c-black {
     color: black;
 }
@@ -154,42 +183,17 @@
     color: white;
 }
 
-.c-grey {
-    color: var(--grey-color);
+.c-666 {
+    color: #666;
 }
 
 .c-red {
-    color: var(--red-color);
+    color: red;
 }
 
-.c-green {
-    color: var(--green-color);
+.bg-main {
+    background-color: var(--main-color);
 }
-
-.c-blue {
-    color: var(--blue-color);
-}
-
-.c-orange {
-    color: var(--orange-color);
-}
-
-.bg-red {
-    background-color: var(--red-color);
-}
-
-.bg-green {
-    background-color: var(--green-color);
-}
-
-.bg-blue {
-    background-color: var(--blue-color);
-}
-
-.bg-orange {
-    background-color: var(--orange-color);
-}
-
 .bg-white {
     background-color: white;
 }
@@ -226,8 +230,16 @@
     font-size: 15px;
 }
 
+.fs-20 {
+    font-size: 20px;
+}
+
 .fs-25 {
     font-size: 25px;
+}
+
+.fs-30 {
+    font-size: 30px;
 }
 
 .fw-bold {
@@ -302,9 +314,28 @@
     justify-content: space-between;
 }
 
+.f-column {
+    flex-direction: column;
+}
+
 .btn-shape {
-    padding: 4px 10px;
+    padding: 10px 20px;
     border-radius: 6px;
 }
 
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.gap-60 {
+    gap: 60px;
+}
 /* End Components */
