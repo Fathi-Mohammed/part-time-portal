@@ -21,25 +21,26 @@
 }
 
 .jobOffers .container {
-
     width: 55%;
 }
-
-.jobOffers .container .box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
+@media (max-width:767px) {
+    .jobOffers .container {
+        width: 100%;
+    }
 }
 
 
 .jobOffers .container .box .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-color: white;
     padding: 30px;
     border-radius: 15px;
     text-align: center;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .jobOffers .container .box .card .text {
@@ -67,7 +68,9 @@
     flex-wrap: wrap;
     border-bottom: 1px solid #CBCBCB;
     padding-bottom: 20px;
+    width: 100%;
 }
+
 
 .jobOffers .container .box .card .info .title {
     font-size: 14px;
@@ -82,15 +85,35 @@
     margin-left: 100px;
 }
 
+@media (max-width:767px) {
+    .jobOffers .container .box .card .info {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .jobOffers .container .box .card .info .title span {
+    margin: 0;
+    }
+}
+
 .jobOffers .container .box .card .moreInfo {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     text-align: right;
     border-bottom: 1px solid #CBCBCB;
     padding: 20px 0;
-    margin-bottom: 20px;
+    margin: 20px;
+    gap: 20px;
+    width: 100%;
+}
 
+@media (max-width:767px) {
+    .jobOffers .container .box .card .moreInfo {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .jobOffers .container .box .card .moreInfo span {
@@ -107,17 +130,35 @@
 .jobOffers .container .box .card a {
     background-color: var(--main-color);
     color: white;
-    padding: 10px 20px;
+    padding: 10px 50px;
     border-radius: 6px;
     font-size: 15px;
     margin-left: 10px;
+    transition: 0.3s;
+}
+
+@media (max-width:767px) {
+    .jobOffers .container .box .card a {
+        display: block;
+        margin-bottom: 10px;
+        width: fit-content;
+    }
+
+}
+
+.jobOffers .container .box .card a:hover {
+    background-color: var(--main-color-alt);
 }
 
 .jobOffers .container .box .card a:last-of-type {
     border: 1px solid red;
     color: red;
     background-color: white;
+    transition: 0.3s;
 }
 
-
+.jobOffers .container .box .card a:last-of-type:hover {
+    color: white;
+    background-color: rgb(197, 21, 21);
+}
 /* End Job Offers */

@@ -16,13 +16,6 @@
     background-color: rgba(0, 0, 0, 0.45);
 }
 
-.landing .container {
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    padding-right: 250px;
-}
-
 @media (max-width:767px) {
     .landing .container {
         padding-right: 0;
@@ -30,13 +23,48 @@
     }
 }
 
+.landing .container .text  {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .landing .container h1 {
     font-size: 40px;
+    padding: 0 0 10px 10px;
+    border-left: 5px solid white;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(30),
+    cursor 0.4s step-start infinite alternate;
 }
+
 
 .landing .container p {
     font-size: 25px;
     margin-bottom: 40px;
+}
+
+@media (max-width:767px) {
+    .landing .container .text  {
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .landing .container h1 {
+        font-size: 20px;
+    }
+    .landing .container p {
+        font-size: 15px;
+    }
+}
+
+.landing .container a {
+    margin-bottom: 40px;
+    transition: var(--main-transition);
+}
+.landing .container a:hover {
+    background-color: var(--main-color-alt);
 }
 
 /* End Landing */
@@ -51,6 +79,18 @@
     }
 }
 
+.main-section .container .card-1 .text a,
+.main-section .container .card a {
+    transition: var(--main-transition);
+}
+
+.main-section .container .card-1 .text a:hover,
+.main-section .container .card a:hover {
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
 .main-section .container .text p {
     line-height: 1.8;
 }
@@ -59,9 +99,24 @@
     flex-basis: calc(50% - 10px);
 }
 
+@media (max-width:767px) {
+    .main-section .container .card {
+        flex-basis: 100%;
+    }
+}
+
 .main-section .container .card i {
     font-size: 70px;
     color: var(--main-color);
 }
 
 /* End Main Section */
+
+/* cursor blinking */
+@keyframes cursor {
+    50% { border-color: transparent;}
+}
+/* typing effect */
+@keyframes typing {
+    from { width: 0;}
+}

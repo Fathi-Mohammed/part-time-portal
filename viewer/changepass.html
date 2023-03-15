@@ -26,16 +26,35 @@
         </div>
         <div class="icons">
           <div class="selection">
-            <i class="fa-solid fa-caret-down"></i>
-            <select name="language" id="">
-              <option value="English">English</option>
-              <option value="Arabic">Arabic</option>
-            </select>
-            <i class="fa-solid fa-earth-americas"></i>
+            <button class="button" id="button">
+              <div class="arrow"></div>
+              <span id="select-label">English</span>
+            </button>
+            <div id="dropdown" class="dropdown hidden">
+              <label class="select-lang" for="English">English</label>
+              <input
+                class="option"
+                id="English"
+                type="radio"
+                name="where"
+                value="English"
+              />
+              <label class="select-lang" for="Arabic">Arabic</label>
+              <input
+                class="option"
+                id="Arabic"
+                type="radio"
+                name="where"
+                value="Arabic"
+              />
+            </div>
           </div>
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-solid fa-earth-americas"></i>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
         </div>
       </div>
     </div>
@@ -115,13 +134,13 @@
           <p>تغيير كلمة المرور</p>
           <form action="#">
             <div class="pass1">
-              <input type="password" placeholder="كلمة المرور">
+              <input type="password" placeholder="كلمة المرور" />
               <span class="eye-1">
                 <i class="fa-regular fa-eye-slash"></i>
               </span>
             </div>
             <div class="pass2">
-              <input type="password" placeholder="تأكيد كلمة المرور">
+              <input type="password" placeholder="تأكيد كلمة المرور" />
               <span class="eye-2">
                 <i class="fa-regular fa-eye-slash"></i>
               </span>
@@ -131,7 +150,6 @@
             <a href="../viewer/log-in.html">تأكيد</a>
             <a href="#">إلغاء</a>
           </div>
-
         </div>
       </div>
     </div>
@@ -260,5 +278,6 @@
       </div>
     </div>
     <!-- End Footer -->
+    <script src="../main.js"></script>
   </body>
 </html>

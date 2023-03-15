@@ -27,16 +27,23 @@
         </div>
         <div class="icons">
           <div class="selection">
-            <i class="fa-solid fa-caret-down"></i>
-            <select name="language" id="">
-              <option value="English">English</option>
-              <option value="Arabic">Arabic</option>
-            </select>
-            <i class="fa-solid fa-earth-americas"></i>
+            <button class="button" id="button">
+              <div class="arrow"></div>
+              <span id="select-label">English</span>
+            </button>
+            <div id="dropdown" class="dropdown hidden">
+              <label class="select-lang" for="English">English</label>
+              <input class="option" id="English" type="radio" name="where" value="English">
+              <label class="select-lang" for="Arabic">Arabic</label>
+              <input class="option" id="Arabic" type="radio" name="where" value="Arabic">
+            </div>
           </div>
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-solid fa-earth-americas"></i>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
         </div>
       </div>
     </div>
@@ -93,13 +100,13 @@
           <li><a href="../viewer/jobOffers.html">العروض الوظيفية</a></li>
           <li><a href="#contacts">اتصل بنا</a></li>
         </ul>
-        <div class="userInfo">
+        <div class="userInfo" onclick="toggleMenu()">
           <i class="fa-regular fa-circle-user"></i>
           <p>محمد إبراهيم السيد</p>
           <i class="fa-solid fa-caret-down"></i>
         </div>
 
-        <div class="megaMenu">
+        <div class="megaMenu" id="megaMenu">
           <a href="../viewer/profile.html">الملف الشخصي</a>
           <a href="../viewer/index.html">تسجيل الخروج</a>
         </div>
@@ -110,13 +117,14 @@
     <!-- End Mega Menu -->
     <!-- Start Landing -->
     <div class="landing p-relative">
-      <div class="container p-absolute c-white">
+      <div class="container">
+      <div class="text p-absolute c-white">
         <h1>مرحبا بكم في منصة العمل الجزئي</h1>
         <p>يمكنك البحث عن أفضل المتدربين</p>
-        <a href="#" class="btn btn-shape bg-main rad-6 c-white fs-15"
-          >مشاهدة المزيد</a
-        >
+        <a href="#" class="btn btn-shape bg-main rad-6 c-white fs-15">مشاهدة المزيد</a>
       </div>
+      </div>
+    
     </div>
     <!-- End Landing -->
     <!-- Star Main Section -->
@@ -346,5 +354,7 @@
       </div>
     </div>
     <!-- End Footer -->
+    <script src="../main.js"></script>
+
   </body>
 </html>

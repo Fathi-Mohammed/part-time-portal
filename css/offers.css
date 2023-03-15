@@ -58,13 +58,6 @@
     gap: 40px;
 }
 
-/* @media (max-width:992px) {
-    .offers .container .box .cards {
-        flex-direction: column;
-    }
-
-} */
-
 .offers .container .cards .card {
     display: flex;
     flex-direction: column;
@@ -135,6 +128,10 @@
 
 .offers .container .cards .main {
     background: rgba(108, 177, 238, 0.15);
+    transition: 0.3s;
+}
+.offers .container .cards .main:hover {
+    background: rgba(108, 177, 238, 0.25);
 }
 
 .offers .container .cards .main .head .headtext {
@@ -155,10 +152,23 @@
 
 .offers .container .cards .main a {
     background-color: var(--main-color);
-    }
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.offers .container .cards .main a:hover {
+        background-color: white;
+        border-color: var(--main-color);
+        color: var(--main-color);
+        font-weight: bold;
+}
 
 .offers .container .cards .silver {
     background: rgba(166, 178, 221, 0.15);
+    transition: 0.3s;
+}
+.offers .container .cards .silver:hover {
+    background: rgba(166, 178, 221, 0.25);
 }
 
 .offers .container .cards .silver .head .headtext {
@@ -179,10 +189,23 @@
 
 .offers .container .cards .silver a {
     background-color: #A6B2DD;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.offers .container .cards .silver a:hover {
+    background-color: white;
+    border-color: #A6B2DD;
+    color: #A6B2DD;
+    font-weight: bold;
 }
 
 .offers .container .cards .gold {
     background: rgba(254, 192, 45, 0.15);
+    transition: 0.3s;
+}
+.offers .container .cards .gold:hover {
+    background: rgba(254, 192, 45, 0.25);
 }
 
 .offers .container .cards .gold .head .headtext {
@@ -203,6 +226,14 @@
 
 .offers .container .cards .gold a {
     background-color: #FEC02D;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+.offers .container .cards .gold a:hover {
+    background-color: white;
+    border-color: #FEC02D;
+    color: #FEC02D;
+    font-weight: bold;
 }
 
 

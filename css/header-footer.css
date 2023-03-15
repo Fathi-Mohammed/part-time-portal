@@ -5,7 +5,8 @@
 
 :root {
     --main-color: #3792FC;
-    ---main-color-alt: #1B74DD;
+    --main-color-alt: #1B74DD;
+    --main-transition: 0.3s;
 }
 
 * {
@@ -82,61 +83,95 @@ ul {
     }
 }
 
+.header .container .info {
+    cursor: pointer;
+}
+
 .header .container .icons {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
     color: #BDE1F5;
+
 }
 
 .header .container .icons .selection {
-    margin-left: 10px;
-    padding-left: 10px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    flex-direction: column;
     position: relative;
+    width: 100px;
+
 }
 
-.header .container .icons .selection::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -5px;
-    width: 1px;
-    height: 15px;
-    background: white;
-    transform: translate(-50%, -50%);
-}
-
-.header .selection select {
-    padding: 0 30px 0 5px;
-    background-color: var(--main-color);
+.header .container .icons .selection .button {
     color: white;
-    border: none;
-    -webkit-appearance: none;
-    appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    font-size: 15px;
-    position: relative;
+    height: 2rem;
+    background-color: var(--main-color);
+    border: none;
 }
 
-.header .selection select::-ms-expand {
+.header .container .icons .selection .button .arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    padding: 4px;
+    transform: rotate(45deg);
+}
+
+.header .container .icons .selection .dropdown {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    position: absolute;
+    border: 2px solid #d3d9f0;
+    width: 100%;
+    top: 100%;
+    color: black;
+    background-color: white;
+    z-index: 100;
+}
+
+.header .container .icons .selection .hidden {
     display: none;
 }
 
-.header .selection select:focus {
-    outline: none;
+.header .container .icons .selection .select-lang {
+    text-align: left;
+    padding: 5px 10px;
+    width: 100%;
+    transition: 0.5s;
 }
 
-.header .container .icons .selection i:first-of-type {
-    position: absolute;
-    right: 15px;
-    font-size: 15px;
-    z-index: 9;
+.header .container .icons .selection .select-lang:hover {
+    padding: 5px 15px;
     color: white;
-    cursor: pointer;
+    background-color: var(--main-color);
+}
+
+.header .container .icons .selection .option {
+    display: none;
+}
+
+.header .container .icons .social {
+    padding-right: 10px;
+    border-right: 1px solid white;
+}
+
+.header .container .icons .social i,
+.header .container .info a i {
+    color: #BDE1F5;
+    margin-right: 5px;
+    transition: 0.3s;
+}
+
+.header .container .icons .social i:hover,
+.header .container .info a i:hover {
+        color: white;
 }
 
 .header .container .info {
@@ -164,23 +199,23 @@ ul {
     position: relative;
 }
 
-@media (max-width:767px) {
-    .nav .container {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
 .nav .container .logo svg {
     height: 64px;
 }
 
 .nav .container ul {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     gap: 40px;
 }
+
+@media (max-width:767px) {
+    .nav .container .main-menu {
+        display: none;
+    }
+}
+
 
 .nav .container ul li a {
     color: black;
@@ -189,6 +224,8 @@ ul {
 .nav .container ul li a:hover {
     color: var(--main-color);
 }
+
+
 
 .nav .container .login-btn {
     background-color: var(--main-color);
@@ -199,6 +236,81 @@ ul {
     justify-content: space-between;
     gap: 10px;
     border-radius: 6px;
+    transition: var(--main-transition);
+}
+
+@media (max-width:767px) {
+    .nav .container .login-btn {
+        display: none;
+    }
+}
+
+.nav .container .login-btn:hover {
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+#menu {
+    transition: 0.6s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidemenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0px;
+    background-color: var(--main-color);
+    z-index: 1;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.sidemenu a {
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    display: block;
+    text-align: center;
+    transition: 0.s;
+}
+
+.sidemenu a:hover {
+    background-color: var(--main-color-alt);
+}
+
+.sidemenu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 50px;
+}
+
+.sidemenu .login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#mainbox {
+    width: 35px;
+    border: none;
+    cursor: pointer;
+    margin: 8px;
+    font-size: 25px;
+}
+
+@media (min-width:767px) {
+    #mainbox {
+        display: none;
+    }
 }
 
 /* End Nav */
@@ -254,6 +366,19 @@ ul {
     background-color: #2E4E86;
     padding: 15px;
     border-radius: 50%;
+    transition: 0.3s;
+}
+
+.contacts .container .contact .whatsApp:hover {
+    background-color: #25d366;
+}
+
+.contacts .container .contact .mail:hover {
+    background-color: #ff0000;
+}
+
+.contacts .container .contact .phone:hover {
+    background-color: #c232e7;
 }
 
 .contacts .container .contact .logo i {
@@ -276,15 +401,15 @@ ul {
 /* End contacts */
 /* Start Footer */
 .footer {
-    background-color: var(---main-color-alt);
+    background-color: var(--main-color-alt);
 }
 
 .footer .container {
     padding-top: 30px;
     padding-bottom: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 40px;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 @media (max-width:767px) {
@@ -292,8 +417,14 @@ ul {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         gap: 10px;
     }
+}
+
+.footer .box {
+    width: calc(100% + 10px);
+    margin-bottom: 20px;
 }
 
 .footer .container .box svg {
@@ -303,20 +434,18 @@ ul {
 .footer .container .box h3 {
     color: white;
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .footer .container .box .social {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 5px;
-    padding-left: 200px;
+
 }
 
 @media (max-width:767px) {
     .footer .container .box .social {
-        padding: 0;
+        justify-content: center;
     }
 }
 
@@ -325,9 +454,11 @@ ul {
     place-items: center;
     padding: 10px;
     background: white;
+    color: var(--main-color);
     border-radius: 50%;
     min-height: 36px;
     min-width: 36px;
+    margin-left: 10px;
     transition: 0.3s;
 }
 
@@ -344,35 +475,30 @@ ul {
 .footer .box h2 {
     color: white;
     font-size: 20px;
-    margin-bottom: 15px;
-    font-weight: lighter;
-
+    margin-bottom: 25px;
 }
 
 .footer .box p {
     color: white;
-    font-size: 12px;
+    font-size: 13px;
     margin-bottom: 15px;
-    font-weight: lighter;
 }
 
 .footer .box .links li {
     padding: 10px 0;
+    width: 100%;
+
 }
 
-.footer .box .links li a:hover {
-    transition: 0.3s ease;
 
+.footer .box .links li a {
+    color: #b9b9b9;
+    transition: var(--main-transition);
 }
 
 .footer .box .links li a:hover {
     color: white;
     margin-right: 10px;
-}
-
-.footer .box .links li a {
-    color: #b9b9b9;
-    transition: var(--main-transition);
 }
 
 .footer .box .links li a::before {
@@ -384,37 +510,56 @@ ul {
 }
 
 .footer .box .mail-input {
-    position: relative;
     margin-top: 40px;
-    margin-right: -25px;
+    display: flex;
+    align-items: center;
 }
 
 
 .footer .box .mail-input input {
     border: none;
+    outline: none;
+    width: 100%;
+    height: 45px;
     padding: 15px;
-    width: 200px;
     border-radius: 0 9999em 9999em 0;
 }
 
+.footer .box .mail-input input::placeholder {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.footer .box .mail-input input:focus::placeholder {
+    opacity: 0;
+}
+
 .footer .box .mail-input button {
-    position: absolute;
-    top: 0;
-    left: -10;
-    bottom: 0;
     border: none;
-    padding: 15px;
+    padding: 20px;
     background-color: #C99B45;
     color: white;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 9999em 0 0 9999em;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+
+.footer .box .mail-input button:hover {
+    background-color: #b5904c;
+
 }
 
 .footer .copyright {
-    padding: 25px 0;
+    padding: 15px 0;
     text-align: center;
     color: white;
-    margin: 50px 0 0;
     background-color: var(--main-color);
+    font-size: 12px;
+    letter-spacing: 1px;
 }
 
 /* End Footer */

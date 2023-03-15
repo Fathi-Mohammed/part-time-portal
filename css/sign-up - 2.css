@@ -76,6 +76,12 @@
     width: 125px;
     height: 135px;
 }
+
+.sign-up .container .box .cards .card:first-of-type:hover {
+    color: red;
+    background-color: #eee;
+}
+
 .sign-up .container .box .cards .card .content {
     width: 100px;
 }
@@ -113,6 +119,11 @@
     border-radius: 10px;
 }
 
+.sign-up .container .wrapper form input:focus {
+    box-shadow: 0px 0px 4px 4px #1b76dd53;
+    border: 1px solid var(--main-color);
+}
+
 .sign-up .container .wrapper form input::placeholder {
     opacity: 1;
     transition: 0.3s;
@@ -121,24 +132,26 @@
 .sign-up .container .wrapper form input:focus::placeholder {
     opacity: 0;
 }
-.sign-up .container .wrapper .pass1 {
+
+.sign-up .container .wrapper .eye {
     position: relative;
 }
-.sign-up .container .wrapper .pass1 .eye-1 i {
-    position: absolute;
-    left: 15px;
-    top:50%;
-    transform: translateY(-50%);
-}
-.sign-up .container .wrapper .pass2 {
+
+.sign-up .container .wrapper .eye {
     position: relative;
 }
-.sign-up .container .wrapper .pass2 .eye-2 i {
+
+.sign-up .container .wrapper .eye .icon {
     position: absolute;
     left: 15px;
-    top:50%;
+    top: 60%;
     transform: translateY(-50%);
 }
+
+.sign-up .container .wrapper .eye .icon img {
+    width: 20px;
+}
+
 .sign-up .container .wrapper a {
     display: block;
     padding: 10px 0;
@@ -154,10 +167,18 @@
     background: var(--main-color);
     color: white;
 }
+.sign-up .container .wrapper a:first-of-type:hover {
+    background-color: var(---main-color-alt);
+}
 
 .sign-up .container .wrapper a:last-of-type {
     border: 1px solid #E8E8E8;
     background: #F7F7FA;
     color: black;
+}
+
+.sign-up .container .wrapper a:last-of-type:hover {
+    color: red;
+    background-color: #eee;
 }
 /* End sign-up */

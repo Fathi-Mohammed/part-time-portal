@@ -77,6 +77,12 @@
     height: 135px;
 }
 
+.login .container .box .cards .card:last-of-type:hover p{
+    color: red;
+    background-color: #eee;
+
+}
+
 .login .container .box .cards .card .content {
     width: 100px;
 }
@@ -92,6 +98,7 @@
     color: white;
     border: none;
 }
+
 
 .login .container .box .cards .active i {
     color: white;
@@ -114,6 +121,11 @@
     border-radius: 10px;
 }
 
+.login .container .wrapper form input:focus {
+    box-shadow: 0px 0px 4px 4px #1b76dd53;
+    border: 1px solid var(--main-color);
+}
+
 .login .container .wrapper form input::placeholder {
     opacity: 1;
     transition: 0.3s;
@@ -125,22 +137,27 @@
 
 .login .container .wrapper .eye {
     position: relative;
-    top: 50%;
 }
-
-.login .container .wrapper .eye i {
+.login .container .wrapper .eye {
+    position: relative;
+}
+.login .container .wrapper .eye .icon {
     position: absolute;
     left: 15px;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
 }
-
-
 
 .login .container .wrapper a:first-of-type {
     display: flex;
     justify-content: flex-start;
     color: black;
+    transition: 0.3s;
+}
+
+.login .container .wrapper a:first-of-type:hover {
+    color: var(--main-color);
+    text-decoration: underline;
 }
 
 .login .container .wrapper a:not(:first-of-type) {
@@ -152,5 +169,9 @@
     margin-top: 10px;
     background: var(--main-color);
     color: white;
+    transition: 0.3s;
+}
+.login .container .wrapper a:not(:first-of-type):hover {
+    background-color: var(---main-color-alt);
 }
 /* End Login */
