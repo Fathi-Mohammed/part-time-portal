@@ -72,9 +72,9 @@
     background-color: #F7F7FA;
     border-radius: 10px;
     border: 1px solid #B1BCC9;
-    transition: 0.3s;
     width: 125px;
     height: 135px;
+    transition: 0.3s;
 }
 
 .sign-up .container .box .cards .card:last-of-type:hover {

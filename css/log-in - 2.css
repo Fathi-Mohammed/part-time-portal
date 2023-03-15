@@ -77,7 +77,7 @@
     height: 135px;
 }
 
-.login .container .box .cards .card:first-of-type:hover p{
+.login .container .box .cards .card:first-of-type:hover{
     color: red;
     background-color: #eee;
 

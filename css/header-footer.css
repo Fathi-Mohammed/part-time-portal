@@ -171,7 +171,7 @@ ul {
 
 .header .container .icons .social i:hover,
 .header .container .info a i:hover {
-        color: white;
+    color: white;
 }
 
 .header .container .info {
@@ -487,13 +487,11 @@ ul {
 .footer .box .links li {
     padding: 10px 0;
     width: 100%;
-
 }
-
 
 .footer .box .links li a {
     color: #b9b9b9;
-    transition: var(--main-transition);
+    transition: 0.5s;
 }
 
 .footer .box .links li a:hover {

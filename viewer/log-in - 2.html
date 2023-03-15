@@ -4,25 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>بوابة العمل الجزئي | تسجيل الدخول</title>
+    <title>بوابة العمل الجزئي</title>
     <!-- Css File -->
     <link rel="stylesheet" href="../css/header-footer.css" />
     <link rel="stylesheet" href="../css/log-in - 2.css" />
-
     <!-- Normalize File -->
     <link rel="stylesheet" href="../css/normalize.css" />
     <!-- Framework File -->
     <link rel="stylesheet" href="../css/framework.css" />
     <!-- FontAwesome Files -->
     <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- Animation Wow -->
+    <link rel="stylesheet" href="../css/animate.css">
   </head>
-
   <body>
     <!-- Start Header -->
-    <div class="header">
+    <header class="header">
       <div class="container">
         <div class="info">
-          <i class="fa-sharp fa-solid fa-phone"></i>
+          <a href="#"><i class="fa-sharp fa-solid fa-phone"></i></a>
           <p style="direction: ltr">+966 000 111 222</p>
         </div>
         <div class="icons">
@@ -46,12 +46,12 @@
         </div>
         </div>
       </div>
-    </div>
+    </header>
     <!-- End Header -->
     <!-- Start Nav -->
     <div class="nav">
       <div class="container">
-        <div class="logo">
+        <a href="../viewer/index.html" class="logo">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="169.137"
@@ -93,20 +93,34 @@
               />
             </g>
           </svg>
-        </div>
-        <ul>
+        </a>
+        <ul class="main-menu menu">
           <li><a href="../viewer/index.html">الرئيسية</a></li>
-          <li><a href="#">نبذة عن البوابة</a></li>
+          <li><a href="#main-section">نبذة عن البوابة</a></li>
           <li><a href="../viewer/offers.html">الباقات</a></li>
-          <li><a href="#">اتصل بنا</a></li>
+          <li><a href="#contacts">اتصل بنا</a></li>
         </ul>
         <a href="../viewer/log-in.html" class="login-btn">
           <p>تسجيل الدخول</p>
           <i class="fa-solid fa-user"></i>
         </a>
+        <div id="mainbox" onclick="openFunction()">&#9776;</div>
+        <div id="menu" class="sidemenu">
+          <div class="grop">
+          <a href="../viewer/index.html">الرئيسية</a>
+          <a href="#main-section">نبذة عن البوابة</a>
+          <a href="../viewer/offers.html">الباقات</a>
+          <a href="#contacts">اتصل بنا</a>
+        </div>
+          <a href="" class="closebtn" onclick="closeFunction()">&times;</a>
+          <a href="../viewer/log-in.html" class="login">
+            <p>تسجيل الدخول</p>
+            <i class="fa-solid fa-user"></i>
+          </a>
+        </div>
       </div>
     </div>
-    <!-- End Nav -->
+      <!-- End Nav -->
     <!-- Start title -->
     <div class="title">
       <div class="container">
@@ -160,28 +174,28 @@
     </div>
     <!-- End Login -->
     <!-- Start contacts -->
-    <div class="contacts">
+    <div class="contacts" id="contacts">
       <div class="container">
         <div class="text">
           <h3>نحن دائماً جاهزون لمساعدتك</h3>
           <p>تواصل معنا من خلال أي من قنوات الدعم التالية:</p>
         </div>
         <div class="contact">
-          <div class="logo">
+          <div class="logo whatsApp">
             <i class="fa-brands fa-whatsapp"></i>
           </div>
           <div class="info">
             <h3>واتس اب</h3>
             <a href="#">800 1235678</a>
           </div>
-          <div class="logo">
+          <div class="logo mail">
             <i class="fa-solid fa-envelope"></i>
           </div>
           <div class="info">
             <h3>الدعم عبر البريد الالكتروني</h3>
             <a href="#">Help@part-time.com</a>
           </div>
-          <div class="logo">
+          <div class="logo phone">
             <i class="fa-solid fa-phone"></i>
           </div>
           <div class="info">
@@ -239,18 +253,18 @@
           </svg>
           <h3>تابعنا علي</h3>
           <div class="social">
-            <div class="logo">
+            <a href="#" class="logo">
               <i class="fa-brands fa-facebook-f"></i>
-            </div>
-            <div class="logo">
+            </a>
+            <a href="#" class="logo">
               <i class="fa-brands fa-twitter"></i>
-            </div>
-            <div class="logo">
+            </a>
+            <a href="#" class="logo">
               <i class="fa-brands fa-linkedin-in"></i>
-            </div>
-            <div class="logo">
+            </a>
+            <a href="#" class="logo">
               <i class="fa-brands fa-instagram"></i>
-            </div>
+            </a>
           </div>
         </div>
         <div class="box">
@@ -269,14 +283,20 @@
             <li><a href="#">اتصل بنا</a></li>
           </ul>
         </div>
+
         <div class="box">
+          
           <h2>الاشتراك في النشرة البريدية</h2>
           <p>سجل بريد شركتك ليصلك المتدربين المسجلين حديثا</p>
+
           <div class="mail-input">
+
             <input type="text" name="" placeholder="البريد الإلكتروني" />
             <button>إشتراك</button>
+
           </div>
         </div>
+
       </div>
       <div class="copyright">
         <h3>جميع الحقوق محفوظة لبوابة العمل الجزئي</h3>
@@ -284,6 +304,10 @@
     </div>
     <!-- End Footer -->
     <script src="../main.js"></script>
+    <script src="../wow.min.js"></script>
+    <script>
+      new WOW().init();
+      </script>
 
   </body>
 </html>

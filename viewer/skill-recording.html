@@ -32,9 +32,21 @@
             </button>
             <div id="dropdown" class="dropdown hidden">
               <label class="select-lang" for="English">English</label>
-              <input class="option" id="English" type="radio" name="where" value="English">
+              <input
+                class="option"
+                id="English"
+                type="radio"
+                name="where"
+                value="English"
+              />
               <label class="select-lang" for="Arabic">Arabic</label>
-              <input class="option" id="Arabic" type="radio" name="where" value="Arabic">
+              <input
+                class="option"
+                id="Arabic"
+                type="radio"
+                name="where"
+                value="Arabic"
+              />
             </div>
           </div>
           <i class="fa-solid fa-earth-americas"></i>
@@ -42,7 +54,7 @@
             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        </div>
+          </div>
         </div>
       </div>
     </div>
@@ -151,34 +163,34 @@
               <p>إرفاق</p>
             </a>
           </div>
-            <a href="../viewer/offers.html">تأكيد</a>
+          <a href="../viewer/offers.html">تأكيد</a>
         </div>
       </div>
     </div>
     <!-- End forgetpass -->
     <!-- Start contacts -->
-    <div class="contacts">
+    <div class="contacts" id="contacts">
       <div class="container">
         <div class="text">
           <h3>نحن دائماً جاهزون لمساعدتك</h3>
           <p>تواصل معنا من خلال أي من قنوات الدعم التالية:</p>
         </div>
         <div class="contact">
-          <div class="logo">
+          <div class="logo whatsApp">
             <i class="fa-brands fa-whatsapp"></i>
           </div>
           <div class="info">
             <h3>واتس اب</h3>
             <a href="#">800 1235678</a>
           </div>
-          <div class="logo">
+          <div class="logo mail">
             <i class="fa-solid fa-envelope"></i>
           </div>
           <div class="info">
             <h3>الدعم عبر البريد الالكتروني</h3>
             <a href="#">Help@part-time.com</a>
           </div>
-          <div class="logo">
+          <div class="logo phone">
             <i class="fa-solid fa-phone"></i>
           </div>
           <div class="info">
@@ -236,18 +248,18 @@
           </svg>
           <h3>تابعنا علي</h3>
           <div class="social">
-            <div class="logo">
+            <a href="#" class="logo">
               <i class="fa-brands fa-facebook-f"></i>
-            </div>
-            <div class="logo">
+            </a>
+            <a href="#" class="logo">
               <i class="fa-brands fa-twitter"></i>
-            </div>
-            <div class="logo">
+            </a>
+            <a href="#" class="logo">
               <i class="fa-brands fa-linkedin-in"></i>
-            </div>
-            <div class="logo">
+            </a>
+            <a href="#" class="logo">
               <i class="fa-brands fa-instagram"></i>
-            </div>
+            </a>
           </div>
         </div>
         <div class="box">
@@ -281,5 +293,9 @@
     </div>
     <!-- End Footer -->
     <script src="../main.js"></script>
+    <script src="../wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

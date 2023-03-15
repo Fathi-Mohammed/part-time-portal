@@ -24,6 +24,7 @@
     font-weight: lighter;
 }
 
+
 /* End title */
 /* Start protfile */
 .protfile {
@@ -35,6 +36,8 @@
     align-items: center;
     justify-content: center;
 }
+
+
 
 .protfile .container .box {
     background-color: white;
@@ -60,6 +63,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media (max-width:767px) {
+    .protfile .container .box .content {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 .protfile .container .box .content .info i {
